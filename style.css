@@ -1,3 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    background-color:rgb(52, 51, 51) ;
+    background-color: white;
+}
+.header{
+ background-color: wheat; 
+ border: 1px;  
+}
+.logo{
+    color: black;
+    font: bolder;
+    text-align: center;
+}
+.logo.hover{
+    background-color: red;
+    color: black;
+}
+.navigation{
+color: white;
+width: 100%;
+text-align: center;
+}
+.navigation.hover{
+    background-color: red;
+    color: black;
+
+}
+.footer{
+color: black;
+text-align: center;
+
 }
