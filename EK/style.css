@@ -1,0 +1,47 @@
+body{
+    background: white;
+}
+#container{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header{
+    color: white;
+    text-align: center;
+}
+.logo{
+    color: blanchedalmond;
+    background-color:transparent;
+    text-align: center;
+}
+.social-icons{
+    padding: 80px;
+}
+#content{
+    padding: 10px;
+}
+.topnav{
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    align-items: center;
+    
+}
+#navigation{
+    display: flex;
+    justify-content: center;
+    background: transparent; 
+    align-items: center;
+}
+#main{
+    color: white;
+
+}
+#footer{
+    text-align: center;
+    clear: both;
+    right: 50%;
+    left: 50%;
+    color: white;
+}
