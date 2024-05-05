@@ -1,52 +1,70 @@
+about.html
 <!DOCTYPE html>
 <html lang="en">
-<html>
-    <head>
-        <meta charset="UTF-8" >
+<head>
+    <link rel="stylesheet" href="style.css"> <!--Link to css styling-->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Me</title>
-        <title>Welcome - Page</title>
-<link rel="stylesheet" href="css/style.css">
-    </head>
-        <body>
-<div class="topnav">
-    <a href="./">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact Us</a>
+    <title>Document</title>
+</head>
+<body >
+    <h1>Registration form</h1>
+    <form action="">
+        <label for="Fn">Fullname:</label><br>
+        <input type="text" id="Fn" placeholder="Fullname"><br><br>
+        <p>Email address</p>
+        <input type="email" placeholder="Email Address"><br><br>
+        <p>Password</p>
+        <input type="password" placeholder="Pass"><br><br>
+        <p>What's your age</p>
+        <input type="number" placeholder="Age"><br><br>
+        <input type="color" placeholder=""><br><br>
+        <input type="range" placeholder=""><br><br>
+        <p>Input date</p>
+        <input type="date" placeholder=""><br><br>
+        <p>Input time</p>
+        <input type="time" placeholder=""><br><br>
+        <p>What's your level ?</p>
+        <label for="Basic">Basic</label>
+         <input type="radio" id="Basic" name="level" placeholder="">
 
-    <a href="./">Home</a> | <a href="about.html">About</a>
-    <div class="topnav-right">
-        <a href="signup.html">Sign Up</a>
-        <a href="signin.html">Sign In</a>
-    </div>
-</div>
-<div class="header">
-    <h1>About Me</h1>
-</div>
+         <label for="Intermediate">Intermediate</label>
+         <input type="radio" id="Intermediate" name="level" placeholder="">
 
-<div class="row">
-    <div class="content">
+        <label for="Advanced">Advanced</label>
+         <input type="radio" id="Advanced" name="level" placeholder="">
+<br><br>
+<p>Select an elective language</p>
+<input type="checkbox" id="Swahili" value="Swahili" name="Swahili">
+<label for="Swahili">Swahili</label><br>
+<input type="checkbox" id="English" value="English" name="English">
+<label for="English">English</label><br>
+<input type="checkbox" id="Spanish" value="Spanish" name="Spanish">
+<label for="Spanish">Spanish</label><br>
+<input type="checkbox" id="Japanese" value="Japanese" name="Japanese">
+<label for="Japanese">Japanese</label><br>
 
-    <h1>About Me</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-@@ -54,7 +68,17 @@ <h2>Teaching</h2>
-            <td>4860 Ksh</td>
-        </tr>
-    </table>
+<br>
 
-</div>
-<div class="side_bar">
-     <!--Chapter 2 starts here-->
-     <h1>Chapter Two</h1>
-     <p style="text-align: justify; font-family: Arial, Helvetica, sans-serif;line-height: 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-     <!--Chapter 2 ends here-->    
-</div>
-</div>      
-<div class="footer">
-    Copyright &copy;2024 ATAYA Designs
-</div>
+<textarea cols="20" rows="10"></textarea>
+<br><br>
 
+<select name="" id="">
+    <option value="">---Select Gender-</option>
+    <option value="1">Female</option>
+    <option value="2">Male</option>
+    <option value="3">Rather not say</option>
+</select>
+
+<br><br>
+<input type="submit" value="Save Details">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    </form>
 </body>
 </html>
