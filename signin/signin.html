@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign In</title>
-  <style></style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="signstyle.css">
 </head>
 <body>
-
-<div class="container">
-  <h2>Sign In</h2>
-  <form action="your-login-script.php" method="post">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
-
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-
-    <input type="submit" value="Sign In">
-  </form>
-</div>
-
+    <div class="topnav">
+        |<a href="./">HOME</a>|
+        <a href="about.html">ABOUT US</a>|
+        <a href="services.html">SERVICES</a>|
+        <a href="Destination.html">DESTINATION</a>|
+        <a href="contact.html">CONTACT US</a>|
+        
+        <div class="topnav-right">
+                    <a href="signup.html">Sign Up</a>
+                    <a href="signin.html">Sign In</a>
+                </div>
+          </div>
+          <div class="signup">
+            <h2>sign up</h2>
+            <br>
+            <form action="" method="post">
+                <label for="name">Username</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <br>
+                <br>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <br>
+                <button>Sign in</button>
+            </form>
+          </div>
+          <div class="footer">
+            <h3>Don't have an account?</h3>
+            <button onclick="signin">Sign up</button>
+          </div>
 </body>
 </html>

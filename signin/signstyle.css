@@ -1,0 +1,15 @@
+body{
+  color: black;
+}
+.topnav{
+  background-color: wheat;
+  color: aliceblue;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.topnav-right{
+  text-align: right;
+  padding-bottom: 10px;
+}
