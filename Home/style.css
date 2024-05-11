@@ -1,32 +1,52 @@
 body{
+    text-align: center;
     background: white;
 }
+*{padding: 0px;box-sizing: border-box;margin:0px;
+list-style: none;}
 #container{
     width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
 #header{
-    color:aliceblue;
+    color: white;
     text-align: center;
+    background-color:white;
 }
 .logo{
-    color: black;
-    background-color:transparent;
+    color: white;;
+    background-color:black;
     text-align: center;
-}
-.social-icons{
-    padding: 80px;
 }
 #content{
     padding: 10px;
 }
+.navbar{
+width: 100%;height: 80px;display: flex;background-color:wheat;
+justify-content: space-around;
+align-items: center;color: #000;
+}
 .topnav{
+    padding: 5px 12px;
+    letter-spacing: 2px;
     display: flex;
     justify-content: center;
     margin-left: 30px;
     align-items: center;
+    color: #000;;text-decoration: none;
     
+}
+.topnav-right{
+    text-align: right;
+  }
+.topnav-right a:hover{
+    color:white;
+    background-color:black;
+}
+.topnav a:hover{
+    color:white;
+    background-color:red;
 }
 #navigation{
     display: flex;
@@ -35,17 +55,21 @@ body{
     align-items: center;
 }
 #main{
+    text-align:left;
     color: black;
 
 }
+.about{
+    color: white;
+}
 #footer{
-    clear: both;
     text-align: center;
+    clear: both;
     right: 50%;
     left: 50%;
     color: black;
+    padding: 20px;
 }
-.know-more{
-    text-align: center;
-    clear: both;
+input[type="submit"]:hover{
+    background: color 45a 49px; ;
 }
