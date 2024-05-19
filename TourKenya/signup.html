@@ -12,7 +12,7 @@
       <h1>Tour Kenya</h1>
     </div>
    <div class="topnav">
-    <a href="home.html">Home</a>
+    <a href="index.html">Home</a>
     <a href="about.html">About us</a>
     <a href="services.html">Services</a>
     <a href="destination.html">Destinations</a>
@@ -24,14 +24,31 @@
     </div>
   </div>
   <div class="main">
-    <div class="heading">
+    <div class="header">
       <h1>Don't have an account?</h1>
+      <p>Create account</p>
       <br>
-      <h4>Create account?</h4>
-      <p></p>
-      <br>
-      <br>
-      <a href="#">Learn More</a>
+      <h2>Sign up</h2>
+    </div>
+      <div class="signup">
+        <form action="signup" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <br>
+            </div>
+            <div class="button">
+            <button type="submit">Signup</button>
+            </div>
     </div>
     </div>
   </div>
