@@ -41,10 +41,16 @@ transition:0.4s ;}
     background-color:white;
 }
 .main{
-background-image: url(../images/home.jpg);background-size: cover;background-repeat: no-repeat;  
-width:100%;height:90vh;display:flex;
-justify-content: space-around;align-items: center;}
-.heading{width: 30%;text-align: center;color:#fff;}
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url(../images/home.jpg);background-size: cover;background-repeat: no-repeat;  
+    width:100%;height: 90vh;
+    align-items: center;}
+.heading{width: 30%;
+    text-align: center;
+    color:black;}
 .heading a:hover{
     letter-spacing: 30px;
     transition:0.6s;
@@ -124,9 +130,15 @@ display:flex;justify-content:space-around;}
     display: block;
     margin-bottom: 5px;
 }
-
+form{
+display: flex;
+flex-direction: column;
+width: 100%;
+max-width: 500px;
+margin: 0 auto;}
 button {
-    width: 100%;
+    align-items: center;
+   width: 50%;
     padding: 10px;
     background-color: #007BFF;
     border: none;
@@ -144,11 +156,13 @@ button:hover {
     margin-bottom: 20px;
 }
 .services {
+    height: fit-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 .service {
+    height: fit-content;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -163,18 +177,20 @@ button:hover {
 /*Destinations */
 .destinations {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     justify-content: space-around;
+    height: fit-content;
 }
 .destination {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 10px;
-    padding: 20px;
-    width: calc(33% - 40px);
+    padding: 8px;
+    width: calc(25% - 100px);
     box-sizing: border-box;
     text-align: center;
+   height: fit-content;
 }
 .destination img {
     max-width: 100%;
@@ -183,3 +199,34 @@ button:hover {
 .destination h3 {
     margin-top: 10px;
 }
+/*Contact us page*/
+.contact{
+    width: 60%;
+    box-sizing: border-box;
+
+}
+.otherinfo{
+    width: 40%;
+    
+}
+  h1, h2 {
+    margin-bottom: 15px;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  textarea {
+    height: 130px;
+  }
+  
+  /* Other Contact Information */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
