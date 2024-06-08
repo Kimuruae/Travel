@@ -46,50 +46,70 @@
             </li>
         </div>
     </nav>
-    <!-- Main Container -->
+     <!-- Main Container -->
   <div class="container mt-4">
-    <h1 class="text-center">Contact Us</h1>
-    <p class="text-center">Have questions? We'd love to hear from you. Reach out to us using the form below or find our contact details.</p>
+    <h1 class="text-center">Blog</h1>
     <div class="row mt-4">
-      <!-- Contact Form -->
-      <div class="col-md-6">
-        <form action="submit_contact_form.php" method="post">
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" name="name" required>
+      <!-- Blog Posts Section -->
+      <div class="col-md-8">
+        <!-- Blog Post 1 -->
+        <div class="card mb-4">
+          <img src="images/blog1.jpg" class="card-img-top" alt="Blog Post 1">
+          <div class="card-body">
+            <h5 class="card-title">Exploring the Wildlife of Kenya</h5>
+            <p class="card-text">Join us on an adventure through Kenya's most famous national parks and reserves, where you can witness the incredible wildlife up close.</p>
+            <a href="post1.html" class="btn btn-primary">Read More</a>
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <!-- Blog Post 2 -->
+        <div class="card mb-4">
+          <img src="images/blog2.jpg" class="card-img-top" alt="Blog Post 2">
+          <div class="card-body">
+            <h5 class="card-title">Top Beach Destinations in Kenya</h5>
+            <p class="card-text">Discover the best beaches in Kenya for a relaxing holiday, complete with pristine sands, clear waters, and luxurious resorts.</p>
+            <a href="post2.html" class="btn btn-primary">Read More</a>
           </div>
-          <div class="mb-3">
-            <label for="subject" class="form-label">Subject</label>
-            <input type="text" class="form-control" id="subject" name="subject" required>
+        </div>
+        <!-- Blog Post 3 -->
+        <div class="card mb-4">
+          <img src="images/blog3.jpg" class="card-img-top" alt="Blog Post 3">
+          <div class="card-body">
+            <h5 class="card-title">Cultural Experiences in Kenya</h5>
+            <p class="card-text">Learn about the rich cultural heritage of Kenya by visiting traditional villages, attending cultural festivals, and exploring museums.</p>
+            <a href="post3.html" class="btn btn-primary">Read More</a>
           </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        </div>
       </div>
-      <!-- Contact Details -->
-      <div class="col-md-6">
-        <h3>Contact Details</h3>
-        <p><strong>Address:</strong> 123 Kenya Street, Nairobi, Kenya</p>
-        <p><strong>Phone:</strong> +254 123 456 789</p>
-        <p><strong>Email:</strong> info@tourkenya.com</p>
-        <h3>Follow Us</h3>
-        <ul class="list-inline">
-          <li class="list-inline-item"><a href="#"><img src="images/facebook.png" alt="Facebook" style="width:30px;"></a></li>
-          <li class="list-inline-item"><a href="#"><img src="images/twitter.png" alt="Twitter" style="width:30px;"></a></li>
-          <li class="list-inline-item"><a href="#"><img src="images/instagram.png" alt="Instagram" style="width:30px;"></a></li>
-        </ul>
+      <!-- Sidebar Section -->
+      <div class="col-md-4">
+        <!-- Categories -->
+        <div class="card mb-4">
+          <div class="card-header">
+            Categories
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#">Wildlife</a></li>
+            <li class="list-group-item"><a href="#">Beach Holidays</a></li>
+            <li class="list-group-item"><a href="#">Cultural Tours</a></li>
+            <li class="list-group-item"><a href="#">Adventure Activities</a></li>
+            <li class="list-group-item"><a href="#">City Excursions</a></li>
+          </ul>
+        </div>
+        <!-- Recent Posts -->
+        <div class="card mb-4">
+          <div class="card-header">
+            Recent Posts
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="post1.html">Exploring the Wildlife of Kenya</a></li>
+            <li class="list-group-item"><a href="post2.html">Top Beach Destinations in Kenya</a></li>
+            <li class="list-group-item"><a href="post3.html">Cultural Experiences in Kenya</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-
-             <!-- Footer -->
+          <!-- Footer -->
   <footer class="footer mt-4 bg-dark text-white text-center py-3">
     <div class="container">
       <p>&copy; 2024 Tour Kenya. All Rights Reserved.</p>

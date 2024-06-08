@@ -1,65 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kenya</title>
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <!--Bootsrap CSS for a responsive Webpage-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--Custom CSS-->
+    <link href="..//css/style.css" rel="stylesheet">
+
 </head>
 <body>
-  <div class="navbar">
-    <div class="logo">
-      <h1>Tour Kenya</h1>
-    </div>
-   <div class="topnav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About us</a>
-    <a href="services.html">Services</a>
-    <a href="destination.html">Destinations</a>
-    <a href="contact.html">Contact us</a>
-    <a href="signin.html">Sign in</a>
-    <a href="signup.html">Sign up</a>
-    </div>
-  </div>
-  <div class="main">
-        <section class="intro">
-            <h2>Top Destinations in Kenya</h2>
-            <p>Explore the most beautiful and exciting places in Kenya, each offering unique experiences and unforgettable adventures.</p>
-        </section>
-        <div class="destinations">
-            <div class="destination">
-                <img src="../images/MM.jpg" alt="Safari in Maasai Mara">
-                <h3>Maasai Mara</h3>
-                <p>Experience the Great Migration and abundant wildlife in one of Africa's most famous safari destinations.</p>
-            </div>
-            <div class="destination">
-                <img src="../images/diani.jpg" alt="Beach in Diani">
-                <h3>Diani Beach</h3>
-                <p>Relax on the pristine white sands of Diani Beach, with crystal-clear waters and a variety of water sports.</p>
-            </div>
-            <div class="destination">
-                <img src="../images/mt.jpg" alt="Mount Kenya">
-                <h3>Mount Kenya</h3>
-                <p>Challenge yourself with a climb up Mount Kenya, the second-highest peak in Africa, offering stunning views and diverse flora and fauna.</p>
-            </div>
-            <div class="destination">
-                <img src="../images/Lk.jpg" alt="Lake Nakuru">
-                <h3>Lake Nakuru</h3>
-                <p>Visit Lake Nakuru National Park, home to thousands of flamingos and other bird species, as well as rhinos and lions.</p>
-            </div>
-            <div class="destination">
-                <img src="../images/nrb.jpg" alt="Nairobi City">
-                <h3>Nairobi</h3>
-                <p>Explore Kenya's vibrant capital city, Nairobi, with its rich history, modern attractions, and nearby national park.</p>
-            </div>
+    <!--Navaigation bar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">TourKenya</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="destination.html">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">contact</a>
+                </li>
+            </ul>
+            <li class="nav-item">
+                <a class="nav-link" href="signin.html">sign in</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="signup.html">sign up</a>
+            </li>
         </div>
+    </nav>
+    <!-- Main Container -->
+  <div class="container mt-4">
+    <h1 class="text-center">Top Destinations in Kenya</h1>
+    <p class="text-center">Explore the best destinations that Kenya has to offer. From stunning safaris to pristine beaches, experience the diverse beauty of Kenya.</p>
+    <div class="row mt-4">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/maasai_mara.jpg" class="card-img-top" alt="Maasai Mara">
+          <div class="card-body">
+            <h5 class="card-title">Maasai Mara</h5>
+            <p class="card-text">Experience the thrill of the great migration and witness the Big Five in the iconic Maasai Mara.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/diani_beach.jpg" class="card-img-top" alt="Diani Beach">
+          <div class="card-body">
+            <h5 class="card-title">Diani Beach</h5>
+            <p class="card-text">Relax on the white sandy beaches of Diani, with crystal clear waters and luxurious resorts.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/mount_kenya.jpg" class="card-img-top" alt="Mount Kenya">
+          <div class="card-body">
+            <h5 class="card-title">Mount Kenya</h5>
+            <p class="card-text">Adventure awaits as you climb Africa’s second-highest peak, surrounded by stunning landscapes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/tsavo.jpg" class="card-img-top" alt="Tsavo National Park">
+          <div class="card-body">
+            <h5 class="card-title">Tsavo National Park</h5>
+            <p class="card-text">Explore the vast wilderness of Tsavo, home to a variety of wildlife and breathtaking scenery.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/lamu.jpg" class="card-img-top" alt="Lamu Island">
+          <div class="card-body">
+            <h5 class="card-title">Lamu Island</h5>
+            <p class="card-text">Step back in time on Lamu Island, where history and culture blend seamlessly with natural beauty.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/nairobi.jpg" class="card-img-top" alt="Nairobi City">
+          <div class="card-body">
+            <h5 class="card-title">Nairobi City</h5>
+            <p class="card-text">Discover the vibrant capital city of Nairobi, a hub of culture, commerce, and wildlife experiences.</p>
+          </div>
+        </div>
+      </div>
     </div>
-  <div class="footer">
-    <a href="#">Copyright</a>
-    <a href="#">Terms and conditions</a>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Cookies</a>
-    <a href="#">Complaints</a>
   </div>
+             <!-- Footer -->
+  <footer class="footer mt-4 bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2024 Tour Kenya. All Rights Reserved.</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#" class="text-white">Terms and Conditions</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Cookies</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Complaints</a></li>
+      </ul>
+    </div>
+  </footer>
+    <!--Bootrap Js,Pooper,jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

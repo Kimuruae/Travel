@@ -1,50 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kenya</title>
-  <!--Bootsrap CSS-->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+5hb7x1x1W1f5Cv5iZw1F5P4z5x3f4C5z4Z0L7I" crossorigin="anonymous">
-  <!--Custom Css-->
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <!--Bootsrap CSS for a responsive Webpage-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--Custom CSS-->
+    <link href="..//css/style.css" rel="stylesheet">
+
 </head>
 <body>
-  <div class="navbar">
-    <div class="logo">
-      <h1>Tour Kenya</h1>
+    <!--Navaigation bar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">TourKenya</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="destination.html">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">contact</a>
+                </li>
+            </ul>
+            <li class="nav-item">
+                <a class="nav-link" href="signin.html">sign in</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="signup.html">sign up</a>
+            </li>
+        </div>
+    </nav>
+    <!--Main container-->
+    <div id="home" class="container mt-4">
+        <h2>Home</h2>
+        <p>Welcome to the Home section.</p>
     </div>
-   <div class="topnav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About us</a>
-    <a href="services.html">Services</a>
-    <a href="destination.html">Destinations</a>
-    <a href="contact.html">Contact us</a>
-    <a href="signin.html">Sign in</a>
-    <a href="signup.html">Sign up</a>
+    
+    <div id="about" class="container mt-4">
+        <h2>About</h2>
+        <p>Learn more about us in the About section.</p>
     </div>
-  </div>
-  <div class="main">
-    <div class="heading">
-      <h1>Travel With Us</h1>
-      <br>
-      <p>Explore Kenya's breathtaking destinations with us.</p>
-      <br>
-      <a href="about.html">Let's go!!</a>
+    
+    <div id="services" class="container mt-4">
+        <h2>Services</h2>
+        <p>Discover our services in this section.</p>
     </div>
-    </div>
-  </div>
-  <div class="footer">
-    <a href="#">Copyright</a>
-    <a href="#">Terms and conditions</a>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Cookies</a>
-    <a href="#">Complaints</a>
-  </div>
-  <!--Bootsrap JS,Popper.js,and jQuery-->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pbeyygTVP9omI7lfXZyJ34PGmQkl1t07B7JPj6pi5sojSnjtvtrdX2A5R8c+ChgD" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-
+        <!-- Featured Destinations -->
+        <div class="featured-destinations mt-4">
+            <h2>Featured Destinations</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card mb-4">
+                  <img src="../images/MM.jpg" class="card-img-top" alt="Maasai Mara">
+                  <div class="card-body">
+                    <h5 class="card-title">Maasai Mara</h5>
+                    <p class="card-text">Witness the incredible wildlife and the Great Migration in Maasai Mara National Reserve.</p>
+                    <a href="destination.html" class="btn btn-primary">Learn More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card mb-4">
+                  <img src="../images/diani.jpg" class="card-img-top" alt="Diani Beach">
+                  <div class="card-body">
+                    <h5 class="card-title">Diani Beach</h5>
+                    <p class="card-text">Relax on the beautiful white sands and enjoy water sports at Diani Beach.</p>
+                    <a href="destination.html" class="btn btn-primary">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Customer Testimonials -->
+          <div class="testimonial mt-4">
+            <h2>What Our Customers Say</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <blockquote class="blockquote">
+                  <p class="mb-0">"Tour Kenya provided an unforgettable safari experience. Highly recommend their services!"</p>
+                  <footer class="blockquote-footer">John Doe</footer>
+                </blockquote>
+              </div>
+              <div class="col-md-6">
+                <blockquote class="blockquote">
+                  <p class="mb-0">"The cultural tour was eye-opening. Learned so much about Kenya's rich heritage."</p>
+                  <footer class="blockquote-footer">Jane Smith</footer>
+                </blockquote>
+              </div
+              <!-- Footer -->
+              <footer class="footer mt-4 bg-dark text-white text-center py-3">
+                <div class="container">
+                  <p>&copy; 2024 Tour Kenya. All Rights Reserved.</p>
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#" class="text-white">Terms and Conditions</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white">Cookies</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white">Complaints</a></li>
+                  </ul>
+                </div>
+              </footer>
+    <!--Bootrap Js,Pooper,jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

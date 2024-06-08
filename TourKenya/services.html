@@ -1,66 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kenya</title>
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <!--Bootsrap CSS for a responsive Webpage-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--Custom CSS-->
+    <link href="..//css/style.css" rel="stylesheet">
+
 </head>
 <body>
-  <div class="navbar">
-    <div class="logo">
-      <h1>Tour Kenya</h1>
-    </div>
-   <div class="topnav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About us</a>
-    <a href="services.html">Services</a>
-    <a href="destination.html">Destinations</a>
-    <a href="contact.html">Contact us</a>
-    <a href="signin.html">Sign in</a>
-    <a href="signup.html">Sign up</a>
-    </div>
-  </div>
-  <div class="main">
-    <div class="intro">
-            <h1>Our Services</h1>
-            <p>Discover the breathtaking beauty and rich cultural heritage of Kenya with our exclusive tourism services.</p>
-    </div>
-        <div class="services">
-            <div class="service">
-                <h3>Safari Tours</h3>
-                <p>Experience the wildlife of Kenya through our guided safari tours in famous national parks and reserves.</p>
-                <br>
-              </div>
-                <div class="service">
-                <h3>Beach Holidays</h3>
-                <p>Relax on the pristine beaches of Kenya's coastline, with luxurious resorts and various water activities.</p>
-                <br>
-                </div>
-                <div class="service">
-                <h3>Cultural Tours</h3>
-                <p>Explore Kenya's rich cultural heritage through visits to traditional villages, museums, and cultural festivals.</p>
-                <br>
-                </div>
-                <div class="service">
-                <h3>Adventure Activities</h3>
-                <p>Engage in thrilling activities like mountain climbing, hiking, and water sports in Kenya's diverse landscapes.</p>
-                <br>
-                </div>
-                <div class="service">
-                <h3>City Excursions</h3>
-                <p>Discover the vibrant city life of Nairobi and Mombasa, with guided tours to historical sites and modern attractions.</p>
-                </div>
-            </div>
+    <!--Navaigation bar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">TourKenya</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="destination.html">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">contact</a>
+                </li>
+            </ul>
+            <li class="nav-item">
+                <a class="nav-link" href="signin.html">sign in</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="signup.html">sign up</a>
+            </li>
         </div>
-    </main>
+    </nav>
+    <!--Main container-->
+      <!-- Services Section -->
+  <div class="container mt-4">
+    <h1 class="text-center">Our Services</h1>
+    <div class="row mt-4">
+      <!--Safari Tours-->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="images/safari.jpg" class="card-img-top" alt="Safari Tours">
+          <div class="card-body">
+            <h5 class="card-title">Safari Tours</h5>
+            <p class="card-text">Experience the wildlife of Kenya through our guided safari tours in famous national parks and reserves.</p>
+            <p><strong>Price:</strong> $1000</p>
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    <!-- Beach Holidays -->
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="images/beach.jpg" class="card-img-top" alt="Beach Holidays">
+        <div class="card-body">
+          <h5 class="card-title">Beach Holidays</h5>
+          <p class="card-text">Relax on the pristine beaches of Kenya's coastline, with luxurious resorts and various water activities.</p>
+          <p><strong>Price:</strong> $1500</p>
+          <a href="#" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Cultural Tours -->
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="images/culture.jpg" class="card-img-top" alt="Cultural Tours">
+        <div class="card-body">
+          <h5 class="card-title">Cultural Tours</h5>
+          <p class="card-text">Explore Kenya's rich cultural heritage through visits to traditional villages, museums, and cultural festivals.</p>
+          <p><strong>Price:</strong> $800</p>
+          <a href="#" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="footer">
-    <a href="#">Copyright</a>
-    <a href="#">Terms and conditions</a>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Cookies</a>
-    <a href="#">Complaints</a>
+
+  <!-- More Services -->
+  <div class="row mt-4">
+    <!-- Adventure Activities -->
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="images/adventure.jpg" class="card-img-top" alt="Adventure Activities">
+        <div class="card-body">
+          <h5 class="card-title">Adventure Activities</h5>
+          <p class="card-text">Enjoy thrilling activities like hiking, mountain climbing, and water sports in Kenya's stunning landscapes.</p>
+          <p><strong>Price:</strong> $1200</p>
+          <a href="#" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Luxury Safaris -->
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="images/luxury_safari.jpg" class="card-img-top" alt="Luxury Safaris">
+        <div class="card-body">
+          <h5 class="card-title">Luxury Safaris</h5>
+          <p class="card-text">Experience Kenya's wildlife in luxury with private tours, exclusive lodges, and personalized services.</p>
+          <p><strong>Price:</strong> $3000</p>
+          <a href="#" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Family Tours -->
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="images/family.jpg" class="card-img-top" alt="Family Tours">
+        <div class="card-body">
+          <h5 class="card-title">Family Tours</h5>
+          <p class="card-text">Enjoy family-friendly tours and activities designed to create unforgettable memories for all ages.</p>
+          <p><strong>Price:</strong> $1800</p>
+          <a href="#" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
+         <!-- Footer -->
+         <footer class="footer mt-4 bg-dark text-white text-center py-3">
+          <div class="container">
+            <p>&copy; 2024 Tour Kenya. All Rights Reserved.</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#" class="text-white">Terms and Conditions</a></li>
+              <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+              <li class="list-inline-item"><a href="#" class="text-white">Cookies</a></li>
+              <li class="list-inline-item"><a href="#" class="text-white">Complaints</a></li>
+            </ul>
+          </div>
+        </footer>
+    <!--Bootrap Js,Pooper,jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

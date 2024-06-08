@@ -1,63 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kenya</title>
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <!--Bootsrap CSS for a responsive Webpage-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--Custom CSS-->
+    <link href="..//css/style.css" rel="stylesheet">
+
 </head>
 <body>
-  <div class="navbar">
-    <div class="logo">
-      <h1>Tour Kenya</h1>
-    </div>
-   <div class="topnav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About us</a>
-    <a href="services.html">Services</a>
-    <a href="destination.html">Destinations</a>
-    <a href="contact.html">Contact us</a>
-    <a href="signin.html">Sign in</a>
-    <a href="signup.html">Sign up</a>
-    </div>
-  </div>
-  <div class="main">
-    <div class="heading">
-      <h1>Don't have an account?</h1>
-      <p>Create account</p>
-      <br>
+    <!--Navaigation bar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">My Company</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="destination.html">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">contact</a>
+                </li>
+            </ul>
+            <li class="nav-item">
+                <a class="nav-link" href="signin.html">sign in</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="signup.html">sign up</a>
+            </li>
+        </div>
+    </nav>
+     <!-- Main Container -->
+         <!--Main container-->
+    <div id="signup" class="container mt-4">
       <h2>Sign up</h2>
-    </div>
-      <div class="signup">
-        <form action="signup" method="post">
-            <div class="form-group">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <br>
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
-                <br>
-
-                <div class="button">
-                  <button type="submit">Signup</button>
-                </div>
-            </div>
-            
-    </div>
+      <p>Sign up to recieve our emails and news.</p>
+  </div>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="text-center mb-4">Sign Up</h2>
+            <form>
+              <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" required>
+              </div>
+              <div class="mb-3">
+                <label for="confirm-password" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm-password" required>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+              </div>
+              <div class="mt-3 text-center">
+                <p>Already have an account? <a href="signin.html">Sign In</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="footer">
-    <a href="#">Copyright</a>
-    <a href="#">Terms and conditions</a>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Cookies</a>
-    <a href="#">Complaints</a>
-  </div>
+             <!-- Footer -->
+  <footer class="footer mt-4 bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2024 Tour Kenya. All Rights Reserved.</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#" class="text-white">Terms and Conditions</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Cookies</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Complaints</a></li>
+      </ul>
+    </div>
+  </footer>
+    <!--Bootrap Js,Pooper,jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
