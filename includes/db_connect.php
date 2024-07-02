@@ -5,7 +5,7 @@
     $db_name = "tour";
 
     // Create connection
-    $conn = new mysqli(localhost,root,tour);
+    $conn = new mysqli($servername, $username, $password, $db_name);
 
     // Check connection
     if ($conn->connect_error) {
