@@ -10,26 +10,26 @@
                  
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="about.php">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
+                    <a class="nav-link" href="services.php">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="destination.html">Destinations</a>
+                    <a class="nav-link" href="destination.php">Destinations</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
+                    <a class="nav-link" href="blog.php">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">contact</a>
+                    <a class="nav-link" href="contact.php">contact</a>
                 </li>
             </ul>
             <li class="nav-item">
-                <a class="nav-link" href="signin.html">sign in</a>
+                <a class="nav-link" href="signin.php">sign in</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="signup.html">sign up</a>
+                <a class="nav-link" href="signup.php">sign up</a>
             </li>
         </div>
     </nav>

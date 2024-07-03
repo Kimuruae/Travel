@@ -9,7 +9,7 @@
     </div>
     <div id="about" class="container mt-4">
         <h2>About</h2>
-        <a class="nav-link" href="about.html" class="btn btn-primary">Learn More</a> 
+        <a class="nav-link" href="about.php" class="btn btn-primary">Learn More</a> 
     </div>
     <div id="services" class="container mt-4">
         <h2>Services</h2>
