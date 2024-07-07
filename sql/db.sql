@@ -4,9 +4,9 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 -- Database: `tour`
-DROP DATABASE IF EXISTS `WAD`;
-CREATE DATABASE IF NOT EXISTS `WAD` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `WAD`;
+DROP DATABASE IF EXISTS `wad`;
+CREATE DATABASE IF NOT EXISTS `wad` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `wad`;
 
 -- Table structure for table `users`
 
