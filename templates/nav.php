@@ -5,9 +5,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">   <a class="nav-link" href="index.html">Home</a>
+            <ul class="navbar-nav ml-auto">   <a class="nav-link" href="index.php">Home</a>
                 <li class="nav-item">
-                 
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.php">About</a>

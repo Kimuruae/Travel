@@ -32,25 +32,25 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card mb-4">
-              <img src="images/team1.jpg" class="card-img-top" alt="Team Member">
+              <img src="images/CEO.jpg" class="card-img-top" alt="Team Member">
               <div class="card-body">
-                <h5 class="card-title">Edwin Kimuruae</h5>
+                <h5 class="card-title">Sir Edwin Kimuruae</h5>
                 <p class="card-text">Founder & CEO</p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card mb-4">
-              <img src="images/team2.jpg" class="card-img-top" alt="Team Member">
+              <img src="images/guide.jpg" class="card-img-top" alt="Team Member">
               <div class="card-body">
                 <h5 class="card-title">Jane Smith</h5>
-                <p class="card-text">Tour Guide Manager</p>
+                <p class="card-text">Tour Guide Team</p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card mb-4">
-              <img src="images/team3.jpg" class="card-img-top" alt="Team Member">
+              <img src="images/manager.jpg" class="card-img-top" alt="Team Member">
               <div class="card-body">
                 <h5 class="card-title">Emily Johnson</h5>
                 <p class="card-text">Marketing Director</p>

@@ -1,6 +1,5 @@
  <?php require_once("templates/header.php");?>
 <?php include_once("templates/nav.php");?>
-
     <!--Main container-->
     <div id="home" class="container mt-4">
         <h2>Home</h2>
@@ -21,7 +20,7 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="card mb-4">
-                  <img src="../images/MM.jpg" class="card-img-top" alt="Maasai Mara">
+                  <img src="images/MM.jpg" class="card-img-top" alt="Maasai Mara">
                   <div class="card-body">
                     <h5 class="card-title">Maasai Mara</h5>
                     <p class="card-text">Witness the incredible wildlife and the Great Migration in Maasai Mara National Reserve.</p>
@@ -31,7 +30,7 @@
               </div>
               <div class="col-md-6">
                 <div class="card mb-4">
-                  <img src="../images/diani.jpg" class="card-img-top" alt="Diani Beach">
+                  <img src="images/diani.jpg" class="card-img-top" alt="Diani Beach">
                   <div class="card-body">
                     <h5 class="card-title">Diani Beach</h5>
                     <p class="card-text">Relax on the beautiful white sands and enjoy water sports at Diani Beach.</p>
