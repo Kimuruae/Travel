@@ -1,13 +1,12 @@
-<?php
-include_once("templates/header.php");
- include_once("templates/nav.php");?>
+<?php include_once("templates/header.php");?>
+ <?php include_once("templates/nav.php");?>
     <!--Main container-->
      <!-- About Us Section -->
   <div class="container mt-4">
     <h1 class="text-center">About Us</h1>
     <div class="row mt-4">
       <div class="col-md-6">
-        <img src="../images/nrb.jpg" class="img-fluid" alt="Kenya">
+        <img src="..image/nrb.jpg" class="img-fluid" alt="Kenya">
       </div>
       <div class="col-md-6">
         <h2>Our Story</h2>

@@ -4,12 +4,11 @@ include_once("templates/header.php");
  include_once("templates/nav.php");
  
  if(isset($_POST["signup"])){
-  $fullname = mysqli_real_escape_string($conn, $_POST["fullname"]);
-  $email = mysqli_real_escape_string($conn, $_POST["email"]);
-  $passphrase = mysqli_real_escape_string($conn, $_POST["password"]);
+ $_SESSION["fullname"]= $fullname = mysqli_real_escape_string($conn, $_POST["fullname"]);
+ $_SESSION["email"]= $email = mysqli_real_escape_string($conn, $_POST["email"]);
+ $_SESSION["passphrase"]= $passphrase = mysqli_real_escape_string($conn, $_POST["password"]);
  
   // verify that the full name contains only letters, space and single quotation
-
         // verify that the email has the correct format
 
         if(!filter_var($email_address, FILTER_VALIDATE_EMAIL)){
@@ -52,15 +51,15 @@ include_once("templates/header.php");
             <form>
               <div class="mb-3">
                 <label for="fullname" class="form-label">Fullname</label>
-                <input type="text" class="form-control" id="fullname"maxlength="50" placeholder="Fullname" required>
+                <input type="text" class="form-control" id="fullname"maxlength="50" placeholder="Fullname" required autofocus>
 
 
                 <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email"maxlength="50" placeholder="email" required>
+                <input type="email" class="form-control" id="email"maxlength="50" placeholder="email" required autofocus>
                 <?php if(isset($_GET["wrong_email_format"])){ print "<span class='error_form'>wrong email format</span>"; }?>
 
                 <label for="username" class="form-label">Username</label>
-                <input type="text" class="form-control" id="username"maxlength="50" placeholder="username" required>
+                <input type="text" class="form-control" id="username"maxlength="50" placeholder="username" required >
 
               <label for="password" class="form-label">Password</label>
                 <input type="password" class="form-control" id="password"maxlength="16" placeholder="password" required>
