@@ -6,7 +6,7 @@
     <h1 class="text-center">About Us</h1>
     <div class="row mt-4">
       <div class="col-md-6">
-        <img src="..image/nrb.jpg" class="img-fluid" alt="Kenya">
+        <img src="images/nrb.jpg" class="img-fluid" alt="Kenya">
       </div>
       <div class="col-md-6">
         <h2>Our Story</h2>

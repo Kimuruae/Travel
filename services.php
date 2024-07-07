@@ -10,7 +10,7 @@ include_once("templates/header.php");
       <!--Safari Tours-->
       <div class="col-md-4">
         <div class="card mb-4">
-          <img src="../images/Safari.jpg" class="card-img-top" alt="Safari Tours">
+          <img src="images/Safari.jpg" class="card-img-top" alt="Safari Tours">
           <div class="card-body">
             <h5 class="card-title">Safari Tours</h5>
             <p class="card-text">Experience the wildlife of Kenya through our guided safari tours in famous national parks and reserves.</p>
@@ -22,7 +22,7 @@ include_once("templates/header.php");
     <!-- Beach Holidays -->
     <div class="col-md-4">
       <div class="card mb-4">
-        <img src="../images/Beach.jpg" class="card-img-top" alt="Beach Holidays">
+        <img src="images/Beach.jpg" class="card-img-top" alt="Beach Holidays">
         <div class="card-body">
           <h5 class="card-title">Beach Holidays</h5>
           <p class="card-text">Relax on the pristine beaches of Kenya's coastline, with luxurious resorts and various water activities.</p>
@@ -34,7 +34,7 @@ include_once("templates/header.php");
     <!-- Cultural Tours -->
     <div class="col-md-4">
       <div class="card mb-4">
-        <img src="../images/Culture.jpg" class="card-img-top" alt="Cultural Tours">
+        <img src="images/Culture.jpg" class="card-img-top" alt="Cultural Tours">
         <div class="card-body">
           <h5 class="card-title">Cultural Tours</h5>
           <p class="card-text">Explore Kenya's rich cultural heritage through visits to traditional villages, museums, and cultural festivals.</p>
@@ -50,7 +50,7 @@ include_once("templates/header.php");
     <!-- Adventure Activities -->
     <div class="col-md-4">
       <div class="card mb-4">
-        <img src="../images/Adventure.jpg" class="card-img-top" alt="Adventure Activities">
+        <img src="images/Adventure.jpg" class="card-img-top" alt="Adventure Activities">
         <div class="card-body">
           <h5 class="card-title">Adventure Activities</h5>
           <p class="card-text">Enjoy thrilling activities like hiking, mountain climbing, and water sports in Kenya's stunning landscapes.</p>
@@ -62,7 +62,7 @@ include_once("templates/header.php");
     <!-- Luxury Safaris -->
     <div class="col-md-4">
       <div class="card mb-4">
-        <img src="../images/Luxury.jpg" class="card-img-top" alt="Luxury Safaris">
+        <img src="images/Luxury.jpg" class="card-img-top" alt="Luxury Safaris">
         <div class="card-body">
           <h5 class="card-title">Luxury Safaris</h5>
           <p class="card-text">Experience Kenya's wildlife in luxury with private tours, exclusive lodges, and personalized services.</p>
@@ -74,7 +74,7 @@ include_once("templates/header.php");
     <!-- Family Tours -->
     <div class="col-md-4">
       <div class="card mb-4">
-        <img src="../images/Family.jpg" class="card-img-top" alt="Family Tours">
+        <img src="images/Family.jpg" class="card-img-top" alt="Family Tours">
         <div class="card-body">
           <h5 class="card-title">Family Tours</h5>
           <p class="card-text">Enjoy family-friendly tours and activities designed to create unforgettable memories for all ages.</p>
