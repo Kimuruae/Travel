@@ -9,6 +9,7 @@ include_once("templates/header.php");
     <div class="row mt-4">
       <!-- Contact Form -->
       <div class="col-md-6">
+      <div class="card">
         <form action="submit_contact_form.php" method="post">
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
@@ -29,12 +30,14 @@ include_once("templates/header.php");
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
+    </div>
       <!-- Contact Details -->
       <div class="col-md-6">
+      <div class="card">
         <h3>Contact Details</h3>
         <p><strong>Address:</strong> 123 Kenya Street, Nairobi, Kenya</p>
-        <p><strong>Phone:</strong> +254 123 456 789</p>
-        <p><strong>Email:</strong> info@tourkenya.com</p>
+        <p><strong>Phone:</strong> +254 790 613 220</p>
+        <p><strong>Email:</strong>tourkenya@gmail.com</p>
         <h3>Follow Us</h3>
         <ul class="list-inline">
           <li class="list-inline-item"><a href="#"><img src="images/facebook.png" alt="Facebook" style="width:30px;"></a></li>
@@ -44,4 +47,5 @@ include_once("templates/header.php");
       </div>
     </div>
   </div>
-  <?php include_once("templates/footer.php");?>
+</div>
+<?php include_once("templates/footer.php");?>
