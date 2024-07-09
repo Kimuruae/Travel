@@ -1,5 +1,5 @@
 <?php
- require_once("includes/db_connect.php");
+ require_once("includes/database.php");
 include_once("templates/header.php");
  include_once("templates/nav.php");
  
@@ -10,7 +10,6 @@ include_once("templates/header.php");
  
   // verify that the full name contains only letters, space and single quotation
         // verify that the email has the correct format
-
         if(!filter_var($email_address, FILTER_VALIDATE_EMAIL)){
           header("Location: ?wrong_email_format");
           exit();
