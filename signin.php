@@ -1,5 +1,5 @@
-
 <?php 
+require_once("includes/database.php");
 include_once("templates/header.php");
 include_once("templates/nav.php");
 ?>
