@@ -11,7 +11,7 @@ USE `wad`;
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
-  `userId` bigint(11) NOT NULL AUTO_INCREMENT,
+  `userId` bigint(12) NOT NULL AUTO_INCREMENT,
   `fullname` varchar(50) NOT NULL DEFAULT '',
   `email` varchar(50) NOT NULL DEFAULT '',
   `username` varchar(50) NOT NULL DEFAULT '',
@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-TRUNCATE TABLE `messages`;
+TRUNCATE TABLE `users`;
 
 --messages
 DROP TABLE IF EXISTS `messages`;
@@ -47,3 +47,21 @@ CREATE TABLE IF NOT EXISTS `messages` (
 TRUNCATE TABLE `messages`;
 --
 -- Dumping data for table `messages`
+
+-- Table structure for table Bookings
+
+DROP TABLE IF EXISTS `bookings`;
+CREATE TABLE IF NOT EXISTS `users` (
+  `userId` bigint(11) NOT NULL AUTO_INCREMENT,
+  `fullname` varchar(50) NOT NULL DEFAULT '',
+  `email` varchar(50) NOT NULL DEFAULT '',
+  `username` varchar(50) NOT NULL DEFAULT '',
+  `password` varchar(60) NOT NULL DEFAULT '',
+  `datecreated` datetime NOT NULL DEFAULT current_timestamp(),
+  `dateupdated` datetime NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`userId`),
+  UNIQUE KEY `email` (`email`),
+  UNIQUE KEY `username` (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+TRUNCATE TABLE `bookings`;
