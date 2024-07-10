@@ -51,7 +51,7 @@
               <div class="col-md-6">
                 <blockquote class="blockquote">
                   <p class="mb-0">"Tour Kenya provided an unforgettable safari experience.I highly recommend their services!"</p>
-                  <footer class="blockquote-footer">J.J</footer>
+                  <footer class="blockquote-footer">Joshua Kim</footer>
                 </blockquote>
               </div>
               <div class="col-md-6">
