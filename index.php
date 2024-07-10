@@ -57,7 +57,7 @@
               <div class="col-md-6">
                 <blockquote class="blockquote">
                   <p class="mb-0">"The cultural tour was eye-opening. Learned so much about Kenya's rich heritage."</p>
-                  <footer class="blockquote-footer">Jane Smith</footer>
+                  <footer class="blockquote-footer">Kane Smith</footer>
                 </blockquote>
               </div>
 <?php include_once("templates/footer.php");?>
