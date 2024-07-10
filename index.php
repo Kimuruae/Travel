@@ -8,11 +8,12 @@
     </div>
     <div id="about" class="container mt-4">
         <h2>About</h2>
+        <p>Learn more about us <P>
         <a class="nav-link" href="about.php" class="btn btn-primary">Learn More</a> 
     </div>
     <div id="services" class="container mt-4">
         <h2>Services</h2>
-        <p>Discover our services in this section.</p>
+        <p>Start an incredible journey with us today.</p>
     </div>
         <!-- Featured Destinations -->
         <div class="featured-destinations mt-4">
