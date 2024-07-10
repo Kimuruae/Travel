@@ -14,6 +14,7 @@
     <div id="services" class="container mt-4">
         <h2>Services</h2>
         <p>Start an incredible journey with us today.</p>
+        <a class="nav-link" href="services.php" class="btn btn-primary">Services</a> 
     </div>
         <!-- Featured Destinations -->
         <div class="featured-destinations mt-4">
