@@ -18,7 +18,8 @@
     </div>
         <!-- Featured Destinations -->
         <div class="featured-destinations mt-4">
-            <h2>Featured Destinations</h2>
+            <h2>Top Destinations</h2>
+            <br>
             <div class="row">
               <div class="col-md-6">
                 <div class="card mb-4">
@@ -26,7 +27,7 @@
                   <div class="card-body">
                     <h5 class="card-title">Maasai Mara</h5>
                     <p class="card-text">Witness the incredible wildlife and the Great Migration in Maasai Mara National Reserve.</p>
-                    <a href="destination.html" class="btn btn-primary">Learn More</a>
+                    <a href="destination.php" class="btn btn-primary">Learn More</a>
                   </div>
                 </div>
               </div>
