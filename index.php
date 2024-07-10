@@ -37,7 +37,7 @@
                   <div class="card-body">
                     <h5 class="card-title">Diani Beach</h5>
                     <p class="card-text">Relax on the beautiful white sands and enjoy water sports at Diani Beach.</p>
-                    <a href="destination.html" class="btn btn-primary">Learn More</a>
+                    <a href="destination.php" class="btn btn-primary">Learn More</a>
                   </div>
                 </div>
               </div>
