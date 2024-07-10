@@ -23,12 +23,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contact.php">contact</a>
                 </li>
+                <li class="nav-item">
+                     <a class="nav-link" href="signin.php">sign in</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.php">sign up</a>
+                 </li>
             </ul>
-            <li class="nav-item">
-                <a class="nav-link" href="signin.php">sign in</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="signup.php">sign up</a>
-            </li>
         </div>
     </nav>

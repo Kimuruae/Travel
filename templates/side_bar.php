@@ -13,7 +13,7 @@
             <li class="list-group-item"><a href="#">City Excursions</a></li>
           </ul>
         </div>
-        <!-- Recent Posts -->
+        <!-- Recent Posts on the side bar-->
         <div class="card mb-4">
           <div class="card-header">
             Recent Posts
