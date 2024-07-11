@@ -10,12 +10,12 @@ if(isset($_POST["messages"])){
   $_SESSION["messages"] = $message = mysqli_real_escape_string($conn, $_POST["message"]);
 
   // Check if email already exists
-  $check_email_query = "SELECT * FROM `users` WHERE `email` = '$email'";
+  $check_email_query = "SELECT * FROM `messages` WHERE `email` = '$sender_email'";
   $result = $conn->query($check_email_query);
 
   if ($result->num_rows > 0) {
-      $_SESSION["email_exists"] = "This email is already registered.";
-      header("Location: signup.php");
+      $_SESSION["email_exists"] = "Thank you for contacting us";
+      header("Location: contact.php");
       exit();
   } else {
       // contact us 
