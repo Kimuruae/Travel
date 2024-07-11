@@ -1,6 +1,38 @@
 <?php
+require_once("includes/database.php");
 include_once("templates/header.php");
- include_once("templates/nav.php");?>
+ include_once("templates/nav.php");
+ 
+if(isset($_POST["message"])){
+  $_SESSION["fullname"] = $fullname = mysqli_real_escape_string($conn, $_POST["fullname"]);
+  $_SESSION["email"] = $email = mysqli_real_escape_string($conn, $_POST["email"]);
+  $_SESSION["subject"] = $username = mysqli_real_escape_string($conn, $_POST["username"]);
+  $_SESSION["message"] = $passphrase = mysqli_real_escape_string($conn, $_POST["password"]);
+
+  // Check if email already exists
+  $check_email_query = "SELECT * FROM `users` WHERE `email` = '$email'";
+  $result = $conn->query($check_email_query);
+
+  if ($result->num_rows > 0) {
+      $_SESSION["email_exists"] = "This email is already registered.";
+      header("Location: signup.php");
+      exit();
+  } else {
+      // Insert new user
+      $insert_user = "INSERT INTO `users`(`fullname`, `email`, `username`, `password`) VALUES ('$fullname', '$email', '$username', '$passphrase')";
+      
+      if ($conn->query($insert_user) === TRUE) {
+          header("Location: signup.php");
+          // Remove all session variables
+          session_unset();
+          $_SESSION["success"] = "You have successfully signed up!";
+          exit();
+      } else {
+          echo "Error: " . $insert_user . "<br>" . $conn->error;
+      }
+  }
+}
+?>
  
     <!-- Main Container -->
   <div class="container mt-4">
@@ -15,16 +47,16 @@ include_once("templates/header.php");
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input type="text" class="form-control" id="name" name="name" required>
-          </div>
-          <div class="mb-3">
+          
+          
             <label for="email" class="form-label">Email</label>
             <input type="email" class="form-control" id="email" name="email" required>
-          </div>
-          <div class="mb-3">
+          
+          
             <label for="subject" class="form-label">Subject</label>
             <input type="text" class="form-control" id="subject" name="subject" required>
-          </div>
-          <div class="mb-3">
+          
+          
             <label for="message" class="form-label">Message</label>
             <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
           </div>
