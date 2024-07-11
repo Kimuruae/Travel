@@ -43,14 +43,17 @@ if(isset($_POST["message"])){
       <div class="col-md-6">
       <div class="card">
       <div class="card-body">
-        <form action="submit_contact_form.php" method="post">
+        <form action="submit_contact_form.php" method="POST">
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input type="text" class="form-control" id="name" name="name" required>
+            <?php if(isset($_SESSION["nameLetter_err"])){ print '<span class="error_form">'.$_SESSION["nameLetter_err"].'</span>'; unset($_SESSION["nameLetter_err"]); } ?>
           
           
             <label for="email" class="form-label">Email</label>
             <input type="email" class="form-control" id="email" name="email" required>
+            <?php if(isset($_SESSION["wrong_email_format"])){ print '<span class="error_form">'.$_SESSION["wrong_email_format"].'</span>'; unset($_SESSION["wrong_email_format"]); } ?>
+            <?php if(isset($_SESSION["invalid_dom"])){ print '<span class="error_form">'.$_SESSION["invalid_dom"].'</span>'; unset($_SESSION["invalid_dom"]); } ?>
           
           
             <label for="subject" class="form-label">Subject</label>
@@ -60,7 +63,9 @@ if(isset($_POST["message"])){
             <label for="message" class="form-label">Message</label>
             <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="d-grid">
+              <input type="submit" name="contact" value="contact us" class="btn btn-primary"></input>
+            </div>
         </form>
       </div>
 </div>
