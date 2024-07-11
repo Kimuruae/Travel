@@ -36,6 +36,7 @@ include_once("templates/header.php");
       <!-- Contact Details -->
       <div class="col-md-6">
       <div class="card">
+      <div class="card-body">
         <h3>Contact Details</h3>
         <p><strong>Address:</strong> 123 Kenya Street, Nairobi, Kenya</p>
         <p><strong>Phone:</strong> +254 790 613 220</p>
@@ -46,6 +47,7 @@ include_once("templates/header.php");
           <li class="list-inline-item"><a href="#"><img src="images/twitter.png" alt="Twitter" style="width:30px;"></a></li>
           <li class="list-inline-item"><a href="#"><img src="images/instagram.png" alt="Instagram" style="width:30px;"></a></li>
         </ul>
+      </div>
       </div>
     </div>
   </div>
