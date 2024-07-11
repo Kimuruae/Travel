@@ -10,7 +10,7 @@ include_once("templates/header.php");
       <div class="col-md-8">
         <!-- Blog Post 1 -->
         <div class="card mb-4">
-          <img src="images/blog1.jpg" class="card-img-top" alt="Blog Post 1">
+          <img src="images/Lk.jpg" class="card-img-top" alt="Blog Post 1">
           <div class="card-body">
             <h5 class="card-title">Exploring the Wildlife of Kenya</h5>
             <p class="card-text">Join us on an adventure through Kenya's most famous national parks and reserves, where you can witness the incredible wildlife up close.</p>
