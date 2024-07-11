@@ -36,5 +36,8 @@ include_once("templates/header.php");
           </div>
         </div>
       </div>
+      <br>
+      <br>
+      <br>
       <?php include_once("templates/side_bar.php");?>
   <?php include_once("templates/footer.php");?>
