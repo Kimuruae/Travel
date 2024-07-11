@@ -19,7 +19,7 @@ include_once("templates/header.php");
         </div>
         <!-- Blog Post 2 -->
         <div class="card mb-4">
-          <img src="images/blog2.jpg" class="card-img-top" alt="Blog Post 2">
+          <img src="images/Beach.jpg" class="card-img-top" alt="Blog Post 2">
           <div class="card-body">
             <h5 class="card-title">Top Beach Destinations in Kenya</h5>
             <p class="card-text">Discover the best beaches in Kenya for a relaxing holiday, complete with pristine sands, clear waters, and luxurious resorts.</p>
@@ -28,7 +28,7 @@ include_once("templates/header.php");
         </div>
         <!-- Blog Post 3 -->
         <div class="card mb-4">
-          <img src="images/blog3.jpg" class="card-img-top" alt="Blog Post 3">
+          <img src="images/Culture.jpg" class="card-img-top" alt="Blog Post 3">
           <div class="card-body">
             <h5 class="card-title">Cultural Experiences in Kenya</h5>
             <p class="card-text">Learn about the rich cultural heritage of Kenya by visiting traditional villages, attending cultural festivals, and exploring museums.</p>
