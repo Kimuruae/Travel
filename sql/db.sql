@@ -26,8 +26,8 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 TRUNCATE TABLE `users`;
+--Messages table 
 
---messages
 DROP TABLE IF EXISTS `messages`;
 CREATE TABLE IF NOT EXISTS `messages` (
   `messageId` int(1) NOT NULL AUTO_INCREMENT,
@@ -43,15 +43,13 @@ CREATE TABLE IF NOT EXISTS `messages` (
 --
 -- Truncate table before insert `messages`
 --
-
 TRUNCATE TABLE `messages`;
---
--- Dumping data for table `messages`
 
+-- Dumping data for table `messages`
 -- Table structure for table Bookings
 
 DROP TABLE IF EXISTS `bookings`;
-CREATE TABLE IF NOT EXISTS `users` (
+CREATE TABLE IF NOT EXISTS `bookings` (
   `userId` bigint(11) NOT NULL AUTO_INCREMENT,
   `fullname` varchar(50) NOT NULL DEFAULT '',
   `email` varchar(50) NOT NULL DEFAULT '',
