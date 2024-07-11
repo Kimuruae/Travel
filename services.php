@@ -1,7 +1,9 @@
 <?php
+require_once("includes/database.php");
 include_once("templates/header.php");
- include_once("templates/nav.php");
- ?>
+include_once("templates/nav.php");
+
+?>
     <!--Main container-->
       <!-- Services Section -->
   <div class="container mt-4">
