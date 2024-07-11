@@ -10,6 +10,7 @@ include_once("templates/header.php");
       <!-- Contact Form -->
       <div class="col-md-6">
       <div class="card">
+      <div class="card-body">
         <form action="submit_contact_form.php" method="post">
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
@@ -30,6 +31,7 @@ include_once("templates/header.php");
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
+</div>
     </div>
       <!-- Contact Details -->
       <div class="col-md-6">
