@@ -3,11 +3,11 @@ require_once("includes/database.php");
 include_once("templates/header.php");
  include_once("templates/nav.php");
  
-if(isset($_POST["message"])){
-  $_SESSION["fullname"] = $fullname = mysqli_real_escape_string($conn, $_POST["fullname"]);
-  $_SESSION["email"] = $email = mysqli_real_escape_string($conn, $_POST["email"]);
-  $_SESSION["subject"] = $username = mysqli_real_escape_string($conn, $_POST["username"]);
-  $_SESSION["message"] = $passphrase = mysqli_real_escape_string($conn, $_POST["password"]);
+if(isset($_POST["messages"])){
+  $_SESSION["name"] = $name = mysqli_real_escape_string($conn, $_POST["sender_name"]);
+  $_SESSION["email"] = $email = mysqli_real_escape_string($conn, $_POST["sender_email"]);
+  $_SESSION["subject"] = $subject = mysqli_real_escape_string($conn, $_POST["subject_line"]);
+  $_SESSION["messages"] = $message = mysqli_real_escape_string($conn, $_POST["message"]);
 
   // Check if email already exists
   $check_email_query = "SELECT * FROM `users` WHERE `email` = '$email'";
@@ -18,17 +18,17 @@ if(isset($_POST["message"])){
       header("Location: signup.php");
       exit();
   } else {
-      // Insert new user
-      $insert_user = "INSERT INTO `users`(`fullname`, `email`, `username`, `password`) VALUES ('$fullname', '$email', '$username', '$passphrase')";
+      // contact us 
+      $insert_messages = "INSERT INTO `messages`(`name`, `email`, `username`, `password`) VALUES ('$sender_name', '$sender_email', '$subject_line', '$message')";
       
-      if ($conn->query($insert_user) === TRUE) {
-          header("Location: signup.php");
+      if ($conn->query($insert_messages) === TRUE) {
+          header("Location: contact.php");
           // Remove all session variables
           session_unset();
-          $_SESSION["success"] = "You have successfully signed up!";
+          $_SESSION["success"] = "message sent!";
           exit();
       } else {
-          echo "Error: " . $insert_user . "<br>" . $conn->error;
+          echo "Error: " . $insert_messages . "<br>" . $conn->error;
       }
   }
 }
@@ -43,7 +43,7 @@ if(isset($_POST["message"])){
       <div class="col-md-6">
       <div class="card">
       <div class="card-body">
-        <form action="submit_contact_form.php" method="POST">
+      <form action="<?php print htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" class="contact_form" autocomplete="off">
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input type="text" class="form-control" id="name" name="name" required>
