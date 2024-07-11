@@ -64,7 +64,7 @@ if(isset($_POST["messages"])){
             <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
           </div>
           <div class="d-grid">
-              <input type="submit" name="contact" value="contact us" class="btn btn-primary"></input>
+              <input type="submit" name="contact" value="send" class="btn btn-primary"></input>
             </div>
         </form>
       </div>
