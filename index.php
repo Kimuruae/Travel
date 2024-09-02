@@ -3,8 +3,7 @@
     <!--Main container-->
     <div id="home" class="container mt-4">
         <h2>Home</h2>
-        <p>Welcome to Tour Kenya. The number one Travel and tour agency in Kenya</p>
-        <p>Experience a whole new adventure exploring</p>
+        <p>Welcome to Tour Kenya. The number one Travel and tour agency in Kenya.<br>Experience a whole new adventure exploring</p>
     </div>
     <div id="about" class="container mt-4">
         <h2>About</h2>
