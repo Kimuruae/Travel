@@ -12,6 +12,7 @@
         <h2>Our Story</h2>
         <p>Tour Kenya was founded with a passion for showcasing the natural beauty and rich cultural heritage of Kenya. Our mission is to provide unforgettable experiences for our clients through our carefully curated tours and services.</p>
         <p>Since our inception, we have been committed to delivering high-quality, personalized services to our customers. We believe in responsible tourism and strive to create a positive impact on the communities and environments we visit.</p>
+        <p>Our team of experienced professionals is dedicated to ensuring that your travel experience is seamless, enjoyable, and memorable. We look forward to welcoming you to Kenya and sharing the wonders of our country with you.</p>
       </div>
     </div>
     
